@@ -1,0 +1,12 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/resource/js/components/login.js": "/js/resource/js/components/login.js",
+    "/js/resource/js/components/register.js": "/js/resource/js/components/register.js",
+    "/js/resource/js/components/dashboard.js": "/js/resource/js/components/dashboard.js",
+    "/js/resource/js/components/Profile.js": "/js/resource/js/components/Profile.js",
+    "/js/resource/js/components/Roles.js": "/js/resource/js/components/Roles.js",
+    "/js/resource/js/components/Permissions.js": "/js/resource/js/components/Permissions.js",
+    "/js/resource/js/components/Users.js": "/js/resource/js/components/Users.js",
+    "/js/resource/js/components/Home.js": "/js/resource/js/components/Home.js",
+    "/css/app.css": "/css/app.css"
+}

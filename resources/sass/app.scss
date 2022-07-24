@@ -1,0 +1,53 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.toast:not(.show) {
+   display: block;
+}
+.small-font{
+	font-size:10px;
+}
+.ml-auto{
+	margin-left:auto;
+}
+.close {
+  box-sizing: content-box;
+  padding: $btn-close-padding-y $btn-close-padding-x;
+  color: $btn-close-color;
+  background: transparent escape-svg($btn-close-bg) center / $btn-close-width auto no-repeat; // include transparent for button elements
+  border: 0; // for button elements
+  @include border-radius();
+  opacity: $btn-close-opacity;
+
+  // Override <a>'s hover style
+  &:hover {
+    color: $btn-close-color;
+    text-decoration: none;
+    opacity: $btn-close-hover-opacity;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: $btn-close-focus-shadow;
+    opacity: $btn-close-focus-opacity;
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: $btn-close-disabled-opacity;
+  }
+}
+.float-right{
+	float:right;
+}
+.mr-auto{
+	margin-right:auto;
+}
