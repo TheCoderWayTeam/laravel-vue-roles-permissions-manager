@@ -53,3 +53,6 @@ The [MIT license](http://opensource.org/licenses/MIT).
 
 
 ## THECODERWAY "We develope your Dreams, with code with proud"
+## "We develope your Dreams"
+## "with code,"
+## "with proud"
