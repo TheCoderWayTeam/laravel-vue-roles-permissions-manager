@@ -1,22 +1,55 @@
-# Laravel8Vue2AuthWithRoleAndPermissionsManagment
- Laravel8 Vue2 Auth With Role And Permissions Managment
+# laravel-vue-roles-permissions-manager
+Laravel-8 and Vue-2 Roles Permissions Admin - Spatie version
+
+This is a Laravel 8 and Vue2 starter project with roles-permissions management based on [Spatie Laravel-permission package](https://github.com/spatie/laravel-permission)
 
 complete login/register system with role and permissions managment on Laravel 8 and Vue2
 
-Step 1. git clone https://github.com/thecoderbalram/thecoderbalram/Laravel8Vue2AuthWithRoleAndPermissionsManagment.git
+## Usage
 
-Step 2. add .env file
+This is not a package - it's a full Laravel/Vue project that you should use as a starter, and then add your own custom functionality.
 
-Step 3. composer update
+- Clone the repository with `git clone`
+- Copy `.env.example` file to `.env` and edit database credentials there
+- Run `composer update`
+- Run `php artisan optimize:clear`
+- Run `php artisan config:clear`
+- Run `php artisan migrate:fresh --seed` (it has some seeded data - see below)
+- Run `npm install` (ode package manager for Vue)
+- Run `npm run watch`
+- Run `php artisan serve`
 
-step 4. php artisan optimize:clear
+- That's it: launch the main URL and login with default Super Admin credentials `superadmin@gmail.com` - `12345678`
+  `admin@gmail.com` - `12345678`
+  `hr@gmail.com` - `12345678`
+  `guest@gmail.com` - `12345678`
 
-step 5. php artisan config:clear
+## This starter has one roles
+	-  Administrator
+	-  Assistance Administrator
+	-  HR
+	-  Guest
 
-step 6. php artisan migrate:fresh --seed
+## This starter has one roles
+	-  role-list
+	-	role-create
+	-	role-edit
+	-	role-delete
+	-	user-list
+	-	user-create
+	-	user-edit
+	-	user-delete
+	-	permission-list
+	-	permission-create
+	-	permission-edit
+	-	permission-delete
+	-	Profile-manage
 
-step 7. npm install
+You can create more roles/permissions/users, and then use them in your code, by using functionality like `Gate` or `@can`, as in default Laravel, or with help of Spatie's package methods.
 
-step 8. npm run watch
+## License
 
-step 9. php artisan serve
+The [MIT license](http://opensource.org/licenses/MIT).
+
+
+## THECODERWAY "We develope your Dreams, with code with proud"
