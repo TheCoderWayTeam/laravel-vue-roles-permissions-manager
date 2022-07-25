@@ -24,14 +24,14 @@ This is not a package - it's a full Laravel/Vue project that you should use as a
   `hr@gmail.com` - `12345678`
   `guest@gmail.com` - `12345678`
 
-## This starter has one roles
+## This starter has few roles
 	-  Administrator
 	-  Assistance Administrator
 	-  HR
 	-  Guest
 
-## This starter has one roles
-	-  role-list
+## This starter has few permissions
+	-  	role-list
 	-	role-create
 	-	role-edit
 	-	role-delete
