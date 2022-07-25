@@ -1,5 +1,5 @@
 # laravel-vue-roles-permissions-manager
-Laravel-8 and Vue-2 Roles Permissions Admin - Spatie version
+Laravel-8 and Vue-2 Roles Permissions Admin - Using Spatie
 
 This is a Laravel 8 and Vue2 starter project with roles-permissions management based on [Spatie Laravel-permission package](https://github.com/spatie/laravel-permission)
 
