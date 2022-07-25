@@ -52,7 +52,7 @@ You can create more roles/permissions/users, and then use them in your code, by 
 The [MIT license](http://opensource.org/licenses/MIT).
 
 
-## THECODERWAY "We develope your Dreams, with code with proud"
+## THECODERWAY "We develope your Dreams"
 ## "We develope your Dreams"
 ## "with code,"
 ## "with proud"
