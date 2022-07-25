@@ -15,7 +15,7 @@ This is not a package - it's a full Laravel/Vue project that you should use as a
 - Run `php artisan optimize:clear`
 - Run `php artisan config:clear`
 - Run `php artisan migrate:fresh --seed` (it has some seeded data - see below)
-- Run `npm install` (ode package manager for Vue)
+- Run `npm install` (Node package manager for Vue)
 - Run `npm run watch`
 - Run `php artisan serve`
 
