@@ -137,6 +137,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "users",
@@ -943,20 +946,38 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "col-12 mb-2 mb-2 mt-2" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-primary btn-block",
-                          attrs: { type: "submit", disabled: _vm.processing },
-                        },
-                        [
-                          _vm._v(
-                            "\r\n\t\t\t\t\t\t\t\t\t\t\t" +
-                              _vm._s(_vm.processing ? "Please wait" : "Save") +
-                              "\r\n\t\t\t\t\t\t\t\t\t\t"
+                      _vm.$can("user-edit")
+                        ? _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-block",
+                              attrs: {
+                                type: "submit",
+                                disabled: _vm.processing,
+                              },
+                            },
+                            [
+                              _vm._v(
+                                "\r\n\t\t\t\t\t\t\t\t\t\t\t" +
+                                  _vm._s(
+                                    _vm.processing ? "Please wait" : "Save"
+                                  ) +
+                                  "\r\n\t\t\t\t\t\t\t\t\t\t"
+                              ),
+                            ]
+                          )
+                        : _c(
+                            "div",
+                            {
+                              staticClass: "alert alert-warning",
+                              attrs: { role: "alert" },
+                            },
+                            [
+                              _vm._v(
+                                "\r\n\t\t\t\t\t\t\t\t\t\t  You Don't have sufficient permissions to save.\r\n\t\t\t\t\t\t\t\t\t\t"
+                              ),
+                            ]
                           ),
-                        ]
-                      ),
                     ]),
                   ]
                 ),

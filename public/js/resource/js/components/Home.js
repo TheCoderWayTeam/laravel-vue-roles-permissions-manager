@@ -29,6 +29,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -126,47 +151,102 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container h-100" }, [
       _c("div", { staticClass: "row h-100 align-items-center" }, [
-        _c("div", { staticClass: "col-12 text-center" }, [
-          _c("img", {
-            attrs: {
-              src: "https://thecoderway.com/assets/images/logo.png",
-              width: "180",
-              alt: "logo",
-            },
-          }),
+        _c("div", { staticClass: "col-12" }, [
+          _c("h1", { staticClass: "fw-bolder" }, [
+            _vm._v("Laravel Vue roles permissions manager"),
+          ]),
           _vm._v(" "),
-          _c("p", { staticClass: "col-4 offset-4 mt-2 fw-bold" }, [
+          _c("p", { staticClass: "fs-4" }, [
+            _vm._v("Laravel-8 and Vue-2 Roles Permissions Admin - "),
             _c(
               "a",
-              { attrs: { target: "_blank", href: "https://thecoderway.com" } },
-              [_vm._v("THECODERWAY")]
-            ),
-            _vm._v(
-              " has established itself as a leading name in providing exceptional technology solutions and services that always adhere to globally recognized standards and latest technology trends."
+              {
+                attrs: {
+                  target: "_blank",
+                  href: "https://github.com/spatie/laravel-permission",
+                },
+              },
+              [_vm._v("Using Spatie")]
             ),
           ]),
           _vm._v(" "),
-          _c("h3", { staticClass: "mt-5" }, [
+          _c("p", { staticClass: "fs-5" }, [
             _vm._v(
-              "THECODERWAY's complete login/register system on Laravel 8 and Vue2"
+              "This is a Laravel 8 and Vue2 starter project with roles-permissions management based on "
+            ),
+            _c(
+              "a",
+              {
+                attrs: {
+                  target: "_blank",
+                  href: "https://github.com/spatie/laravel-permission",
+                },
+              },
+              [_vm._v("Spatie")]
+            ),
+            _vm._v(" Laravel permission package"),
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "fs-5" }, [
+            _vm._v(
+              "complete login/register system with role and permissions managment on Laravel 8 and Vue2"
             ),
           ]),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-12 text-center" }, [
-          _c("h2", [
-            _c("i", { staticClass: "bi bi-whatsapp" }),
-            _vm._v(" +917692929596 "),
+        _c("div", { staticClass: "col-12" }, [
+          _c("h1", { staticClass: "fw-bolder" }, [
+            _vm._v("This starter has few roles"),
           ]),
           _vm._v(" "),
-          _c("h2", [
-            _c("i", { staticClass: "bi bi-envelope-paper-heart-fill" }),
-            _vm._v(" info@thecoderway.com "),
+          _c("p", { staticClass: "fs-4" }, [
+            _vm._v(
+              "This is not a package - it's a full Laravel/Vue project that you should use as a starter, and then add your own custom functionality."
+            ),
           ]),
           _vm._v(" "),
-          _c("h2", [
-            _c("i", { staticClass: "bi bi-linkedin" }),
-            _vm._v(" https://in.linkedin.com/company/the-coder-way "),
+          _c("ul", [
+            _c("li", [_vm._v("Administrator")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Assistance Administrator")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("HR")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Guest")]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12" }, [
+          _c("h1", { staticClass: "fw-bolder" }, [
+            _vm._v("This starter has few permissions"),
+          ]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [_vm._v("role-list")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("role-create")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("role-edit")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("role-delete")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("user-list")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("user-create")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("user-edit")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("user-delete")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("permission-list")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("permission-create")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("permission-edit")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("permission-delete")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Profile-manage")]),
           ]),
         ]),
       ]),

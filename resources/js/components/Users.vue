@@ -102,9 +102,12 @@
 									</div>
 									
 									<div class="col-12 mb-2 mb-2 mt-2">
-										<button type="submit" :disabled="processing" class="btn btn-primary btn-block">
+										<button type="submit" :disabled="processing" class="btn btn-primary btn-block" v-if="$can('user-edit')">
 											{{ processing ? "Please wait" : "Save" }}
 										</button>
+										<div class="alert alert-warning" role="alert" v-else>
+										  You Don't have sufficient permissions to save.
+										</div>
 									</div>
 								</form>
 							</div>

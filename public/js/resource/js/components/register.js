@@ -209,7 +209,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         email: "",
         password: "",
         password_confirmation: "",
-        roles: ['2']
+        roles: ['4']
       },
       processing: false,
       errors: {

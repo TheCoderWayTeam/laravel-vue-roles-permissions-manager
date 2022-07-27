@@ -2,7 +2,7 @@
 	<div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container">
-				<a href="/" target="_blank" class="navbar-brand">THECODERWAY</a>
+				<a href="/" target="_blank" class="navbar-brand">STARTER</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -58,7 +58,7 @@
 <script>
 import {mapActions} from 'vuex'
 export default {
-    name:"Example",
+    name:"Main",
 	computed: {
 	  isLoggedIn() {
 		return this.$store.state.auth.authenticated;

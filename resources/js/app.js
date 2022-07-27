@@ -10,7 +10,7 @@ window.Vue = require('vue').default;
 
 import router from './router'
 import store from './store'
-import App from './components/ExampleComponent.vue';
+import App from './components/MainComponent.vue';
 
 import { ToastPlugin } from 'bootstrap-vue';
 Vue.use(ToastPlugin)

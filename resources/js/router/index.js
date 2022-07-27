@@ -9,6 +9,7 @@ const Login = () => import('../components/Login.vue' /* webpackChunkName: "resou
 const Register = () => import('../components/Register.vue' /* webpackChunkName: "resource/js/components/register" */)
 const Forgetpassword = () => import('../components/Forgetpassword.vue' /* webpackChunkName: "resource/js/components/register" */)
 const Resetpassword = () => import('../components/Resetpassword.vue' /* webpackChunkName: "resource/js/components/register" */)
+const Home = () => import('../components/Home.vue' /* webpackChunkName: "resource/js/components/Home" */)
 /* Guest Component */
 
 /* Authenticated Component */
@@ -17,7 +18,6 @@ const Profile = () => import('../components/Profile.vue' /* webpackChunkName: "r
 const Roles = () => import('../components/Roles.vue' /* webpackChunkName: "resource/js/components/Roles" */)
 const Permissions = () => import('../components/Permissions.vue' /* webpackChunkName: "resource/js/components/Permissions" */)
 const Users = () => import('../components/Users.vue' /* webpackChunkName: "resource/js/components/Users" */)
-const Home = () => import('../components/Home.vue' /* webpackChunkName: "resource/js/components/Home" */)
 /* Authenticated Component */
 
 

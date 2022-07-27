@@ -19,6 +19,12 @@ class PermissionsController extends Controller
          $this->middleware('permission:permission-delete', ['only' => ['destroy']]);
     }
     
+	/**
+     * permissions List with pagination.
+     *
+     * @param  array  $request
+     * @return json array response
+     */
     public function permissions(Request $request)
     {
 		if($request->input('page')){
@@ -34,6 +40,12 @@ class PermissionsController extends Controller
 		}
     }
 	
+	/**
+     * Save or update Permission
+     *
+     * @param  array  $request
+     * @return json array response
+     */
     public function store(Request $request)
     {
 		$id = $request->input('id');
@@ -62,7 +74,13 @@ class PermissionsController extends Controller
 		], 200);
 		
     }
-
+	
+	/**
+     * Permissions details by ID
+     *
+     * @param  Int  $id
+     * @return json array response
+     */
     public function getPermissionById($id)
     {
         $permission = Permission::find($id);
@@ -74,6 +92,12 @@ class PermissionsController extends Controller
 			], 200);
     }
 	
+	/**
+     * Delete Permission
+     *
+     * @param  Int  $id
+     * @return json array response
+     */
     public function destroy($id)
     {
         DB::table("permissions")->where('id',$id)->delete();

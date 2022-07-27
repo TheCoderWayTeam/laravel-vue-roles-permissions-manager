@@ -18,7 +18,13 @@ class RolesController extends Controller
          $this->middleware('permission:role-edit', ['only' => ['edit','store']]);
          $this->middleware('permission:role-delete', ['only' => ['destroy']]);
     }
-    
+	
+    /**
+     * Roles List with pagination.
+     *
+     * @param  array  $request
+     * @return json array response
+     */
     public function roles(Request $request)
     {
 		if($request->input('page')){
@@ -35,6 +41,12 @@ class RolesController extends Controller
 		
     }
 	
+	/**
+     * Save or update Role details Permission
+     *
+     * @param  array  $request
+     * @return json array response
+     */
     public function store(Request $request)
     {
 		$id = $request->input('id');
@@ -63,7 +75,13 @@ class RolesController extends Controller
 		], 200);
 		
     }
-
+	
+	/**
+     * Roles details with Permissions by ID
+     *
+     * @param  Int  $id
+     * @return json array response
+     */
     public function getRoleById($id)
     {
         $role = Role::find($id);
@@ -79,6 +97,12 @@ class RolesController extends Controller
 			], 200);
     }
 	
+	/**
+     * Delete role
+     *
+     * @param  Int  $id
+     * @return json array response
+     */
     public function destroy($id)
     {
         DB::table("roles")->where('id',$id)->delete();

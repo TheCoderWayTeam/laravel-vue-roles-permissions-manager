@@ -15,6 +15,12 @@ use Mail;
 
 class AuthController extends Controller
 {
+	/**
+     * Register the new user.
+     *
+     * @param  array  $request
+     * @return json array response
+     */
     public function register(Request $request){
 		$post_data = $request->validate([
 			'name'=>'required|string',
@@ -30,17 +36,19 @@ class AuthController extends Controller
 		
 		$user->assignRole($request->input('roles'));
 		
-		$token = $user->createToken('authToken')->plainTextToken;
-		
 		return response()->json([
-			'access_token' => $token,
 			'token_type' => 'Bearer',
 			'title' => 'Successfully registered.',
 			'message' => 'Successfully registered, you can do login now.'
 		], 200);
 		
 	}
-
+	/**
+     * login the user.
+     *
+     * @param  array  $request
+     * @return json array response with token
+     */
 	public function login(Request $request){
 		if (!\Auth::attempt($request->only('email', 'password'))) {
 			return response()->json([
@@ -60,6 +68,12 @@ class AuthController extends Controller
 				'token_type' => 'Bearer',
 		]);
 	}
+	/**
+     * forgetpassword
+     *
+     * @param  array  $request
+     * @return json array response
+     */
 	public function forgetpassword(Request $request){
 		
 		$post_data = $request->validate([
@@ -87,6 +101,12 @@ class AuthController extends Controller
 			], 200);
 	}
 	
+	/**
+     * resetpassword
+     *
+     * @param  array  $request
+     * @return json array response
+     */
 	public function resetpassword(Request $request){
         $this->validate($request, [
               'password' => 'required|string|min:6|confirmed',
@@ -110,6 +130,13 @@ class AuthController extends Controller
 				'message' => 'Password has been changed.'
 		]);
     }
+	
+	/**
+     * logout
+     *
+     * @param  array  $request
+     * @return json array response
+     */
 	public function logout() {
 		Auth::user()->tokens->each(function($token, $key) {
 			$token->delete();
@@ -117,6 +144,12 @@ class AuthController extends Controller
 		return response()->json('Successfully logged out');
 	}
 	
+	/**
+     * LoggedIn Users details with roles and Permissions
+     *
+     * @param  array  $request
+     * @return json array response
+     */
 	public function user(Request $request) {
 		$user = User::find(Auth::user()->id);
 		$user['roles'] = $user->getAllPermissions();

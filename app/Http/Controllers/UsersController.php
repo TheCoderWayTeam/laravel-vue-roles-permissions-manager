@@ -24,6 +24,12 @@ class UsersController extends Controller
          $this->middleware('permission:user-delete', ['only' => ['destroy']]);
     }
     
+	/**
+     * Users List with pagination.
+     *
+     * @param  array  $request
+     * @return json array response
+     */
     public function users(Request $request)
     {
 		if($request->input('page')){
@@ -39,6 +45,12 @@ class UsersController extends Controller
 		}
     }
 	
+	/**
+     * Users details with roles and Permissions by ID
+     *
+     * @param  Int  $id
+     * @return json array response
+     */
     public function getUserById($id)
     {
         $user = User::find($id);
@@ -52,6 +64,12 @@ class UsersController extends Controller
 			], 200);
     }
 	
+	/**
+     * Save or update Users details with Role and Permission
+     *
+     * @param  array  $request
+     * @return json array response
+     */
 	public function store(Request $request){
 		$id = $request->input('id');
 		if($id){
@@ -88,6 +106,12 @@ class UsersController extends Controller
 			], 200);
 	}
 	
+	/**
+     * Delete user
+     *
+     * @param  Int  $id
+     * @return json array response
+     */
     public function destroy($id)
     {
         $user = User::find($id);
